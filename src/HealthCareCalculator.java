@@ -17,6 +17,11 @@ public class HealthCareCalculator
 
         String sUserPlanInput;
 
+        double dPremium;
+        double dDeductible;
+        double dCoinsurance;
+        double dBills;
+
         System.out.print("Enter the name of the health care plan. \n");
         System.out.print("Acceptable values are: PlanA, planA, PlanB, planB, User, or user: ");
         sUserPlanInput = sUserInput.nextLine();
@@ -24,22 +29,66 @@ public class HealthCareCalculator
         switch(sUserPlanInput)
         {
             case "PlanA":
-                System.out.print("A");
+                System.out.print("Please enter the total medical bills: ");
+                dBills = sUserInput.nextDouble();
+
+                HealthCarePlans PlanA = new HealthCarePlans("PlanA", dBills);
+                System.out.print(PlanA.getdTotalHealthCosts());
                 break;
             case "planA":
-                System.out.print("A lower");
+                System.out.print("Please enter the total medical bills: ");
+                dBills = sUserInput.nextDouble();
+
+                HealthCarePlans planA = new HealthCarePlans("planA", dBills);
+                System.out.print(planA.getdTotalHealthCosts());
                 break;
             case "PlanB":
-                System.out.print("B");
+                System.out.print("Please enter the total medical bills: ");
+                dBills = sUserInput.nextDouble();
+
+                HealthCarePlans PlanB = new HealthCarePlans("PlanB", dBills);
+                System.out.print(PlanB.getdTotalHealthCosts());
                 break;
             case "planB":
-                System.out.print("B lower");
+                System.out.print("Please enter the total medical bills: ");
+                dBills = sUserInput.nextDouble();
+
+                HealthCarePlans planB = new HealthCarePlans("planB", dBills);
+                System.out.print(planB.getdTotalHealthCosts());
                 break;
             case "User":
-                System.out.print("User");
+                System.out.print("Please enter the premium: ");
+                dPremium = sUserInput.nextDouble();
+
+                System.out.print("Please enter the deductible: ");
+                dDeductible = sUserInput.nextDouble();
+
+                System.out.print("Please enter the coinsurance: ");
+                dCoinsurance = sUserInput.nextDouble();
+
+                System.out.print("Please enter the total medical bills: ");
+                dBills = sUserInput.nextDouble();
+
+                HealthCarePlans UserDefined = new HealthCarePlans(dPremium, dDeductible, dCoinsurance, dBills);
+                System.out.print(UserDefined.getdTotalHealthCosts());
+
                 break;
             case "user":
-                System.out.print("User lower");
+                System.out.print("Please enter the premium: ");
+                dPremium = sUserInput.nextDouble();
+
+                System.out.print("Please enter the deductible: ");
+                dDeductible = sUserInput.nextDouble();
+
+                System.out.print("Please enter the coinsurance: ");
+                dCoinsurance = sUserInput.nextDouble();
+
+                System.out.print("Please enter the total medical bills: ");
+                dBills = sUserInput.nextDouble();
+
+                HealthCarePlans userDefined = new HealthCarePlans(dPremium, dDeductible, dCoinsurance, dBills);
+                System.out.print(userDefined.getdTotalHealthCosts());
+
                 break;
             default:
                 System.out.print("Invalid plan. Exiting the program.");

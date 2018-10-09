@@ -52,6 +52,12 @@ public class HealthCarePlans
     {
         return dPremium;
     }
+    public double getdNewBills() { return dNewBills; }
+    public double getdTotalHealthCosts()
+    {
+        return dTotalHealthCosts;
+    }
+
 
     public void setdBills(double dBills)
     {
@@ -87,9 +93,5 @@ public class HealthCarePlans
         {
             this.dTotalHealthCosts = dPremium + dBills;
         }
-    }
-    public double getdTotalHealthCosts()
-    {
-        return dTotalHealthCosts;
     }
 }

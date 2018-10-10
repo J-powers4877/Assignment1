@@ -1,6 +1,6 @@
 /**
  * This class consists of two (2) constructors, one for pre-defined health care plans and one for a user defined health care plan.
- * <p>It also contains a </p>
+ * <p>It also contains a function to calculate the total health care costs.</p>
  *
  * @author Justin Powers
  */
@@ -56,15 +56,15 @@ public class HealthCarePlans
         dCalculateTotalHealthCosts();
     }
 
-    /**
-     * @return The medical bills.
+    /** Returns the private dBills variable.
+     * @return The medical bills that are defined.
      */
     public double getdBills()
     {
         return dBills;
     }
 
-    /**
+    /** Returns the private dCoinsurance variable.
      * @return The defined coinsurance as a decimal.
      */
     public double getdCoinsurance()
@@ -72,16 +72,16 @@ public class HealthCarePlans
         return dCoinsurance;
     }
 
-    /**
-     * @return The defined deductible.
+    /** Returns the private dDeductible variable.
+     * @return The deductible that is defined.
      */
     public double getdDeductible()
     {
         return dDeductible;
     }
 
-    /**
-     * @return The defined premium.
+    /** Returns the private dBills variable.
+     * @return The premium that is defined.
      */
     public double getdPremium()
     {
@@ -93,7 +93,7 @@ public class HealthCarePlans
      */
     public double getdNewBills() { return dNewBills; }
 
-    /**
+    /** Returns the private dBills variable.
      * @return The calculated total health care costs.
      */
     public double getdTotalHealthCosts()
@@ -103,7 +103,7 @@ public class HealthCarePlans
 
 
     /**
-     * @param dBills
+     * @param dBills The total medical bills that the users enters.
      */
     public void setdBills(double dBills)
     {
@@ -111,7 +111,7 @@ public class HealthCarePlans
     }
 
     /**
-     * @param dCoinsurance
+     * @param dCoinsurance Either the defined coinsurance from the constructor or the user's defined coinsurance.
      */
     public void setdCoinsurance(double dCoinsurance)
     {
@@ -119,7 +119,7 @@ public class HealthCarePlans
     }
 
     /**
-     * @param dDeductible
+     * @param dDeductible Either the defined deductible from the constructor or the user's defined deductible.
      */
     public void setdDeductible(double dDeductible)
     {
@@ -127,7 +127,7 @@ public class HealthCarePlans
     }
 
     /**
-     * @param dPremium
+     * @param dPremium Either the defined premium from the constructor or the user's defined deductible.
      */
     public void setdPremium(double dPremium)
     {
@@ -135,7 +135,7 @@ public class HealthCarePlans
     }
 
     /**
-     *
+     * dCalculateTotalHeathCosts takes no variables, but uses the defined variables to calculate the total health costs.
      */
     public void dCalculateTotalHealthCosts()
     {

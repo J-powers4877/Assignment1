@@ -1,11 +1,11 @@
 /*
-Justin Powers
-COP3330C Fall 2018
-Assignment 1: Health Care Calculator
-
-Description: The program will help determine the total health care costs for a person,
-             using their Health Care Plan.
- */
+*   Justin Powers
+*   COP3330C Fall 2018
+*   Assignment 1: Health Care Calculator
+*
+*   Description: The program will help determine the total health care costs for a person,
+*                using their Health Care Plan.
+*/
 
 import java.util.Scanner;
 

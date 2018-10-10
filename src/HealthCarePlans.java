@@ -6,11 +6,34 @@
  */
 public class HealthCarePlans
 {
+    /** Used in both constructors, defined in the first constructor and is set by getting a value passed to it in the second constructor.
+     *
+     */
     private double dPremium;
+
+    /** Used in both constructors, defined in the first constructor and is set by getting a value passed to it in the second constructor.
+     *
+     */
     private double dDeductible;
+
+    /** Used in both constructors, defined in the first constructor and is set by getting a value passed to it in the second constructor.
+     *
+     */
     private double dCoinsurance;
+
+    /** Used in both constructors, both constructors are passed the value which is set.
+     *
+     */
     private double dBills;
+
+    /** Used in both constructors, defined in the first constructor and is set by getting a value passed to it in the second constructor.
+     *
+     */
     private double dNewBills;
+
+    /** Used in both constructors, defined in the first constructor and is set by getting a value passed to it in the second constructor.
+     *
+     */
     private double dTotalHealthCosts;
 
     /**
@@ -102,7 +125,7 @@ public class HealthCarePlans
     }
 
 
-    /**
+    /** Used to set the dBills variable, for medical bills
      * @param dBills The total medical bills that the users enters.
      */
     public void setdBills(double dBills)
@@ -110,7 +133,7 @@ public class HealthCarePlans
         this.dBills = dBills;
     }
 
-    /**
+    /** Used to set the dCoinsurance, for use in the calculations
      * @param dCoinsurance Either the defined coinsurance from the constructor or the user's defined coinsurance.
      */
     public void setdCoinsurance(double dCoinsurance)
@@ -118,7 +141,7 @@ public class HealthCarePlans
         this.dCoinsurance = dCoinsurance;
     }
 
-    /**
+    /** Used to set the dDeductible, for use in the calculations
      * @param dDeductible Either the defined deductible from the constructor or the user's defined deductible.
      */
     public void setdDeductible(double dDeductible)
@@ -126,7 +149,7 @@ public class HealthCarePlans
         this.dDeductible = dDeductible;
     }
 
-    /**
+    /** Used to set the dPremium, for use in the calculations.
      * @param dPremium Either the defined premium from the constructor or the user's defined deductible.
      */
     public void setdPremium(double dPremium)
